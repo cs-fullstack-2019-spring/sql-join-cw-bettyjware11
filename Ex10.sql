@@ -3,9 +3,16 @@
 -- Tables: address and peoplw
 -- on: address.id = people.id
 
-select avg(rent)
-from address
-inner join people
-on address.id = people.id
-group by updatedate
-order by updatedate;
+select name, rent * 12, updatedate
+from people
+inner join address
+on people.id = address.id;
+-- where stadium ilike '2016';
+
+-- group by updatedate, name, rent
+-- order by updatedate, name, rent;
+
+
+
+
+
