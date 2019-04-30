@@ -7,5 +7,5 @@ select rent
 from address
 inner join people
 on address.id = people.id
-where  rent >= 1200   and <= 3000;
+where  rent  between 1200 and 3000;
 
